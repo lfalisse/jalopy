@@ -1,119 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Jalopy Film</title>
 <link rel="stylesheet" href="https://use.typekit.net/sfe8gkb.css">
 <style>
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
 body{
 background-image: url("images/bg.png")
 }
-.footer {
+.centered {
+  width: 27%;
   position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
+  top: 30%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
-#title{
-  font-size: 260%;
-  color: #222020;
-  margin-left: 4%;
+#link{
+  font-size: 20pt;
+  margin-top: 15%;
+  line-height: 3.6;
+  text-align: center;
   font-family: Oxtail, serif;
 }
-#car{
-  margin-right:4%;
-  width: 9%;
-  margin-bottom: 2%;
-}
-.flex-container{
-display:-webkit-flex;
-display:flex;
--webkit-justify-content:space-between;
-justify-content:space-between;
--webkit-align-items:flex-end;
-align-items:flex-end;
--webkit-align-content:space-between;
-align-content:space-between;
-}
-.w3-badge {
-    height: 24px;
-    width: 24px;
-    padding: 0;
-}
-.w3-border {
-    border: 2px solid #222020!important;
-}
-@media screen and (max-width: 500px) {
-  #car{
-    width: 14%;
-    margin-bottom: 13%;
-  }
+a{
+  color:#222020;
 }
 </style>
-<div class="w3-content w3-display-container" style="
-    max-width:1000px; 
-    margin-top: 8%; 
-    border-radius: 8px;
-    border: 3px solid #222020; 
-    background-color:#222020;
-    -webkit-box-shadow: 0px 0px 355px 10px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 355px 10px rgba(255,255,255,1);
-    box-shadow: 0px 0px 355px 10px rgba(255,255,255,1); 
-    ">
-     <div class="mySlides" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/457035650?color=ffffff&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-     <div class="mySlides" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/460237048?color=ffffff&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-     <div class="mySlides" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/457012941?color=ffffff&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-     <div class="mySlides" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/457018002?color=ffffff&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-     <div class="mySlides" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/457044225?color=ffffff&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%; top: 104%;">
-<!--     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div> -->
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+</head>
+<body>
+  <img class='centered' src="images/logo.png">
+  <div class='centered' id='link'>
+    <a href="projects.html">projects</a>
+    <br>
+    <a href="about.html">about us</a>
   </div>
-</div>
-<div class="footer">
-	<div class="flex-container">   
-  		<p id='title'>JALOPY FILMS</p>
-  		<img id='car' src='images/car.png'>
-	</div>
-</div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
 </body>
 </html>
