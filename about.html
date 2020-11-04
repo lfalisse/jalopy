@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jalopy Film</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/sfe8gkb.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+body{
+background-image: url("images/bg.png");
+font-family: Oxtail, serif;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+#title{
+  text-decoration: none;
+  font-size: 260%;
+  color: #222020;
+  margin-left: 4%;
+  margin-bottom: 1.2%;
+  font-family: Oxtail, serif;
+}
+#car{
+  margin-left: 2.8%;
+  width: 7%;
+  margin-top: 2%;
+}
+.flex-container{
+display:-webkit-flex;
+display:flex;
+-webkit-justify-content:space-between;
+justify-content:space-between;
+-webkit-align-items:flex-end;
+align-items:flex-end;
+-webkit-align-content:space-between;
+align-content:space-between;
+}
+.parent {
+margin: 3%;
+margin-top: 3%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 0fr);
+grid-column-gap: 53px;
+grid-row-gap: 0px;
+justify-content: center;
+justify-items: center;
+}
+a{
+  cursor: pointer;
+}
+img{
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  #car{
+    width: 14%;
+    margin-bottom: 13%;
+  }
+}
+#portrait{
+width:57%;
+}
+#position{
+  margin-bottom: 5%;
+  margin-top: -3%;
+  font-size: 10pt;
+}
+p{
+  font-family: athelas, serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 160%;
+  letter-spacing: 1px;
+  font-family: athelas, serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+#about{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 2%
+}
+</style>
+<a href="index.html">
+  <img id='car' src='images/car.png'>
+</a>
+<h1 id='about'>about us</h1>
+<div class="parent">
+  <img id='portrait' src='images/jeremy.png'>
+  <img id='portrait' src='images/louis.png'>
+  <img id='portrait' src='images/thomas.png'>
+  <h1>Jeremy Koch</h1>
+  <h1>Louis Cedrone</h1>
+  <h1>Thomas Lange</h1>
+  <h2 id='position'>Head of Production</h2>
+  <h2 id='position'>Creative / Writer</h2>
+  <h2 id='position'>Creative / Director</h2>
+  <p>Jeremy is a producer from Cleveland, OH. A graduate of NYU with a degree in Finance and Film Production, he has a passion for both the creative and business side of entertainment. He has worked and produced for various companies including A24 Films, NBCUniversal, ViacomCBS, and several boutique investment firms and media agencies.</p>
+  <p>Louis is a screenwriter and Italian-American from Boston, MA. He found his calling in screenwriting at an early age, when he came up with the idea for the movie Jaws in high school. After many failed pitch attempts all around Hollywood, mostly because this film had already been made by Steven Spielberg in 1975, Mr. Cedrone was determined to become the next great American screenwriter. He is currently working on many new original script ideas, including Titanic, Citizen Kane, and Top Gun, among many others.</p>
+  <p>Thomas is a filmmaker hailing from Seattle, WA. He loves collaborating with his friends, and got his start working for many of them in the camera and lighting departments on a range of fashion, commercial, and narrative productions. Bringing a strong visual perspective to his directing, he strives to make grounded work that explores the many surreal moments we experience in everyday life (with a few creative liberties). He holds a strong belief in the empathic power of film.</p>  
+</div>
+</body>
+</html>
